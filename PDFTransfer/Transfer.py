@@ -5,7 +5,7 @@ from PyQt5.QtCore import QThread, pyqtSignal, QUrl
 from PyQt5.QtGui import QIcon
 
 
-def resource_path(relative_path):
+def resource_path(relative_path: str) -> str:
     # get absolute path to resources
     try:
         base_path = sys._MEIPASS2
@@ -143,7 +143,7 @@ class PDFTransfer(QtWidgets.QMainWindow):
         self.transfer_to_text_thread.progress_bar_stop_signal.connect(
             self.hide_progress_bar)
 
-    def transfer_text(self):
+    def transfer_text(self) -> None:
         if not self.pdf_file:
             QtWidgets.QMessageBox.warning(
                 self, "Missing Entry", "Please select a pdf file")
@@ -159,25 +159,25 @@ class PDFTransfer(QtWidgets.QMainWindow):
 
         self.transfer_to_text_thread.start()
 
-    def select_pdf_file(self):
+    def select_pdf_file(self) -> None:
         self.pdf_file, _ = QtWidgets.QFileDialog.getOpenFileName(
             self, "Select pdf file", "C:/", "PDF (*.pdf)")
         self.pdf_file_name = QUrl.fromLocalFile(self.pdf_file).fileName()
 
-    def select_text_path(self):
+    def select_text_path(self) -> None:
         self.text_path = QtWidgets.QFileDialog.getExistingDirectory(
             self, "Select text path", "C:/")
 
-    def warning(self, title, message):
+    def warning(self, title, message) -> None:
         QtWidgets.QMessageBox.warning(self, title, message)
 
-    def show_progress_bar(self):
+    def show_progress_bar(self) -> None:
         # Show the progress bar
         self.progress_bar.setVisible(True)
         self.progress_bar.setRange(0, 0)
         self.progress_bar.setValue(30)
 
-    def hide_progress_bar(self):
+    def hide_progress_bar(self) -> None:
         # Hide the progress bar
         self.progress_bar.setVisible(False)
 
