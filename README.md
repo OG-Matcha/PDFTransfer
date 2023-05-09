@@ -15,7 +15,7 @@ A PyQt5 GUI program that generates texts from PDF file.
 5. Use the Transfer button to extract the text
  
 ## License
-This project is licensed under the MIT License - see the [LICENSE](hhttps://github.com/OG-Matcha/PDF_to_Text/blob/7cbcce10db0b0e2ff78e2090ebf3c073acf1669f/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/OG-Matcha/PDF_to_Text/blob/7cbcce10db0b0e2ff78e2090ebf3c073acf1669f/LICENSE) file for details.
 
 ## Example
 <img alt="Example" src="https://github.com/OG-Matcha/PDF_to_Text/blob/f8e769e83e6f5b424e83d56f65fdba7801fb3e77/PDFTransfer/assets/Example.png" style = "width: 60%">
