@@ -1,5 +1,5 @@
 # PDFTransfer
-An PyQt5 GUI program that generates texts from PDF file.
+A PyQt5 GUI program that generates texts from PDF file.
 
 ## Features
 * Extracted texts from the selected PDF
